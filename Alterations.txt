@@ -1,0 +1,15 @@
+During the implementation of this Project we, members of the group, found some errors that occurred
+for reasons that were not related to our side of the code. By this we mean that given modules
+which shouldn't have been alterated, were creating errors. With the options of either not do the 
+assignment, or alter this modules in order for our implementation to work; we decided to go with
+the last one. 
+  We will, in this file, list all the alteration made to the (originally) unalterable
+modules.
+
+Note: We only made alterations when there was no other option left for us to take in order to complete
+the assignment.
+
+Module        |        Class       |       Method      |                           Action                                  |
+---------------------------------------------------------------------------------------------------------------------------|
+grading.py    |       Grades       |      addMessage   |   Surround *message = cgi.escape(message)* with a try-except block|
+---------------------------------------------------------------------------------------------------------------------------|
