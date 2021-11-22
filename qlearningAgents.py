@@ -77,12 +77,11 @@ class QLearningAgent(ReinforcementAgent):
           are no legal actions, which is the case at the terminal state,
           you should return None.
         """
-        "*** YOUR CODE HERE ***"
         actions = self.getLegalActions(state)
         best_action = None
         max_val = float('-inf')
         for action in actions:
-            q_value = self.q_values[(state, action)]
+            q_value = self.getQValue(state, action)
             if max_val < q_value:
                 max_val = q_value
                 best_action = action
@@ -179,11 +178,7 @@ class ApproximateQAgent(PacmanQAgent):
         return self.weights
 
     def getQValue(self, state, action):
-        """
-          Should return Q(state,action) = w * featureVector
-          where * is the dotProduct operator
-        """
-        "*** YOUR CODE HERE ***"
+          # Should return Q(state,action) = w * featureVector | where * is the dotProduct operator
         features = self.featExtractor.getFeatures(state, action)
         total = 0
         for i in features:
