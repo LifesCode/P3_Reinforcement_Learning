@@ -8,8 +8,10 @@ modules.
 
 Note: We only made alterations when there was no other option left for us to take in order to complete
 the assignment.
-
-Module        |        Class       |       Method      |                           Action                                  |
 ---------------------------------------------------------------------------------------------------------------------------|
-grading.py    |       Grades       |      addMessage   |   Surround *message = cgi.escape(message)* with a try-except block|
+    Module    |        Class       |       Method      |                           Action                                  |
+---------------------------------------------------------------------------------------------------------------------------|
+  grading.py  |       Grades       |      addMessage   |   Surround *message = cgi.escape(message)* with a try-except block|
+---------------------------------------------------------------------------------------------------------------------------|
+              |                    |                   |                                                                   |
 ---------------------------------------------------------------------------------------------------------------------------|

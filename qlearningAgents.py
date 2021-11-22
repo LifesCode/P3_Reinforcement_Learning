@@ -178,7 +178,7 @@ class ApproximateQAgent(PacmanQAgent):
         return self.weights
 
     def getQValue(self, state, action):
-          # Should return Q(state,action) = w * featureVector | where * is the dotProduct operator
+        # Should return Q(state,action) = w * featureVector | where * is the dotProduct operator
         features = self.featExtractor.getFeatures(state, action)
         total = 0
         for i in features:
